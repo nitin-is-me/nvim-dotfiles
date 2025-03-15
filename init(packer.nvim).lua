@@ -1,4 +1,5 @@
 -- This is init.lua if using packer.nvim
+-- File location: C:\Users\Admin\AppData\Local\nvim
 -- Load plugins
 require('plugins')
 
