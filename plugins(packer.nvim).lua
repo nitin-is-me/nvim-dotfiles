@@ -1,3 +1,5 @@
+-- this is plugins.lua if using packer.nvim
+
 -- This file can be loaded by calling `require('plugins')` from your init.lua
 
 -- Only required if you have packer configured as `opt`
