@@ -1,15 +1,46 @@
-Plugins Setup
+Plugins Setup Documentation
+===========================
 
-Packer Setup
- - We are using 'packer.nvim' as the plugin manager.
- - The 'use' function loads various plugins for different functionalities.
+This document explains the `plugins.lua` file, which manages all plugins for Neovim using `packer.nvim`.
+The location of this file is: C:\Users\Admin\AppData\Local\nvim\lua
 
-Plugins:
- - 'wbthomason/packer.nvim': Manages packer itself.
- - 'jiangmiao/auto-pairs': Automatically adds closing brackets, parentheses, quotes, etc.
- - 'joshdick/onedark.vim': Provides the 'onedark' color scheme.
- - 'neovim/nvim-lspconfig': Helps in configuring LSP servers for various languages.
- - 'hrsh7th/nvim-cmp': Auto-completion plugin for Neovim.
- - 'hrsh7th/cmp-nvim-lsp': Source for LSP completions with nvim-cmp.
- - 'hrsh7th/cmp-buffer': Source for buffer completions with nvim-cmp.
- - 'hrsh7th/cmp-path': Source for file path completions with nvim-cmp.
+Table of Contents
+-----------------
+1. Packer Setup
+2. Plugins List
+   - Core Plugins
+   - Autocompletion Plugins
+   - LSP Plugins
+   - Visual Plugins
+
+1. Packer Setup
+---------------
+- We use `packer.nvim` as the plugin manager.
+- The `use` function is used to load and configure plugins.
+
+2. Plugins List
+---------------
+
+Core Plugins:
+- `wbthomason/packer.nvim`: Manages Packer itself. Required for installing and updating plugins.
+
+Autocompletion Plugins:
+- `hrsh7th/nvim-cmp`: The core autocompletion plugin for Neovim.
+- `hrsh7th/cmp-nvim-lsp`: Provides completions from the Language Server Protocol (LSP).
+- `hrsh7th/cmp-buffer`: Offers completions for words in the current buffer.
+- `hrsh7th/cmp-path`: Suggests file paths for completions.
+
+LSP Plugins:
+- `neovim/nvim-lspconfig`: Simplifies the configuration of LSP servers for various programming languages.
+
+Visual Plugins:
+- `joshdick/onedark.vim`: Provides the `onedark` color scheme for a visually appealing interface.
+- `jiangmiao/auto-pairs`: Automatically adds closing brackets, parentheses, quotes, and other paired characters.
+
+Summary
+-------
+This configuration uses `packer.nvim` to manage the following plugins:
+- Core functionality with `packer.nvim`.
+- Autocompletion with `nvim-cmp` and its sources.
+- LSP support with `nvim-lspconfig`.
+- Visual enhancements with `onedark.vim` and `auto-pairs`.
