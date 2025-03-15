@@ -18,7 +18,7 @@ Table of Contents
 
 1. Plugin Management
 -------------------
-Plugins are managed using `packer.nvim`, a popular plugin manager for Neovim. All plugins are defined in the `plugins.lua` file.
+Plugins are managed using either using `packer.nvim` or `lazy.nvim`, popular plugin managers for Neovim. All plugins are defined in the `plugins.lua` or `lazy.lua` file.
 
 2. nvim-cmp (Autocomplete Plugin)
 ---------------------------------
