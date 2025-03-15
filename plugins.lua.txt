@@ -1,0 +1,15 @@
+Plugins Setup
+
+Packer Setup
+ - We are using 'packer.nvim' as the plugin manager.
+ - The 'use' function loads various plugins for different functionalities.
+
+Plugins:
+ - 'wbthomason/packer.nvim': Manages packer itself.
+ - 'jiangmiao/auto-pairs': Automatically adds closing brackets, parentheses, quotes, etc.
+ - 'joshdick/onedark.vim': Provides the 'onedark' color scheme.
+ - 'neovim/nvim-lspconfig': Helps in configuring LSP servers for various languages.
+ - 'hrsh7th/nvim-cmp': Auto-completion plugin for Neovim.
+ - 'hrsh7th/cmp-nvim-lsp': Source for LSP completions with nvim-cmp.
+ - 'hrsh7th/cmp-buffer': Source for buffer completions with nvim-cmp.
+ - 'hrsh7th/cmp-path': Source for file path completions with nvim-cmp.
