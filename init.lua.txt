@@ -2,6 +2,7 @@ Neovim Configuration Documentation
 ==================================
 
 This document provides a detailed explanation of the `init.lua` file used to configure Neovim. It covers plugin management, autocompletion, LSP setup, and visual preferences.
+The location of this file is: C:\Users\Admin\AppData\Local\nvim
 
 Table of Contents
 -----------------
