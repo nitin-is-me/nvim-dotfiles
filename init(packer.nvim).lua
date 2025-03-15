@@ -1,3 +1,4 @@
+-- This is init.lua if using packer.nvim
 -- Load plugins
 require('plugins')
 
