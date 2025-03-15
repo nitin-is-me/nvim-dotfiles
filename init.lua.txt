@@ -1,0 +1,30 @@
+init.lua documentation
+
+1. Plugin Management
+We are using packer.nvim for plugin management and loading.
+
+2. nvim-cmp (Autocomplete plugin)
+ - 'nvim-cmp' is the auto-completion plugin.
+ - 'cmp-nvim-lsp' enables LSP source for nvim-cmp.
+ - 'cmp-buffer' is used for completing words in the current buffer.
+ - 'cmp-path' is used for completing file paths.
+
+Configuration for nvim-cmp:
+ - You can scroll documentation using <C-b> and <C-f>.
+ - Manual trigger of completion with <C-Space>.
+ - Closing completion with <C-e>.
+ - Confirm completion with <CR> (Enter).
+
+3. LSP Setup
+ LSP for TypeScript is set up with 'ts_ls'.
+ - TypeScript Language Server (`ts_ls`) is used for auto-completion and linting for JavaScript and TypeScript files.
+ - `on_attach` function binds keymaps for LSP actions like:
+   - 'gd' to go to definition.
+   - 'K' to show hover documentation.
+   - 'gr' to view references.
+   - 'gi' to go to implementation.
+   
+4. Visuals and Preferences
+ - The color scheme is set to 'onedark' for better readability.
+ - Line numbers are enabled.
+ - Tab settings are configured to use 4 spaces for tabs and indentation.
