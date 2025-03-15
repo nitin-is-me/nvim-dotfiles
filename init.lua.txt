@@ -1,30 +1,72 @@
-init.lua documentation
+Neovim Configuration Documentation
+==================================
+
+This document provides a detailed explanation of the `init.lua` file used to configure Neovim. It covers plugin management, autocompletion, LSP setup, and visual preferences.
+
+Table of Contents
+-----------------
+1. Plugin Management
+2. nvim-cmp (Autocomplete Plugin)
+   - Keybindings
+3. LSP Setup
+   - TypeScript Language Server (`tsserver`)
+   - LSP Keybindings
+4. Visuals and Preferences
+   - Color Scheme
+   - Editor Preferences
 
 1. Plugin Management
-We are using packer.nvim for plugin management and loading.
+-------------------
+Plugins are managed using `packer.nvim`, a popular plugin manager for Neovim. All plugins are defined in the `plugins.lua` file.
 
-2. nvim-cmp (Autocomplete plugin)
- - 'nvim-cmp' is the auto-completion plugin.
- - 'cmp-nvim-lsp' enables LSP source for nvim-cmp.
- - 'cmp-buffer' is used for completing words in the current buffer.
- - 'cmp-path' is used for completing file paths.
+2. nvim-cmp (Autocomplete Plugin)
+---------------------------------
+`nvim-cmp` is the core autocompletion plugin. It integrates with the following sources:
+- `cmp-nvim-lsp`: Provides completions from the Language Server Protocol (LSP).
+- `cmp-buffer`: Offers completions for words in the current buffer.
+- `cmp-path`: Suggests file paths for completions.
 
-Configuration for nvim-cmp:
- - You can scroll documentation using <C-b> and <C-f>.
- - Manual trigger of completion with <C-Space>.
- - Closing completion with <C-e>.
- - Confirm completion with <CR> (Enter).
+Keybindings for `nvim-cmp`:
+- `<C-b>`: Scroll up in the documentation.
+- `<C-f>`: Scroll down in the documentation.
+- `<C-Space>`: Manually trigger completion.
+- `<C-e>`: Close the completion menu.
+- `<CR>` (Enter): Confirm the selected completion.
+- `<Tab>`: Select the next item in the completion menu.
+- `<S-Tab>`: Select the previous item in the completion menu.
 
 3. LSP Setup
- LSP for TypeScript is set up with 'ts_ls'.
- - TypeScript Language Server (`ts_ls`) is used for auto-completion and linting for JavaScript and TypeScript files.
- - `on_attach` function binds keymaps for LSP actions like:
-   - 'gd' to go to definition.
-   - 'K' to show hover documentation.
-   - 'gr' to view references.
-   - 'gi' to go to implementation.
-   
+------------
+The Language Server Protocol (LSP) is configured for TypeScript using `tsserver`.
+
+TypeScript Language Server (`tsserver`):
+- Provides autocompletion, linting, and type-checking for JavaScript and TypeScript files.
+- Keybindings are set up in the `on_attach` function:
+
+LSP Keybindings:
+- `gd`: Go to definition.
+- `K`: Show hover documentation.
+- `gr`: View references.
+- `gi`: Go to implementation.
+- `<leader>rn`: Rename symbol under the cursor.
+- `<leader>ca`: Show code actions.
+
 4. Visuals and Preferences
- - The color scheme is set to 'onedark' for better readability.
- - Line numbers are enabled.
- - Tab settings are configured to use 4 spaces for tabs and indentation.
+--------------------------
+Color Scheme:
+- The `onedark` theme is used for a visually appealing and readable interface.
+
+Editor Preferences:
+- Line Numbers: Enabled for easier navigation.
+- Tab Settings:
+  - `tabstop = 4`: Set tab width to 4 spaces.
+  - `shiftwidth = 4`: Set indentation width to 4 spaces.
+  - `expandtab = true`: Convert tabs to spaces.
+- True Color Support: Enabled with `termguicolors`.
+
+Summary
+-------
+This configuration provides:
+- Autocompletion via `nvim-cmp` with LSP, buffer, and path sources.
+- LSP support for TypeScript with keybindings for navigation, renaming, and code actions.
+- Visual enhancements with the `onedark` theme and clean editor settings.
