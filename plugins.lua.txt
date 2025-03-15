@@ -1,24 +1,6 @@
-Plugins Setup Documentation
-===========================
+This document explains the `plugins.lua` or `lazy.lua` file, which manage all plugins for Neovim.
 
-This document explains the `plugins.lua` file, which manages all plugins for Neovim using `packer.nvim`.
-The location of this file is: C:\Users\Admin\AppData\Local\nvim\lua
-
-Table of Contents
------------------
-1. Packer Setup
-2. Plugins List
-   - Core Plugins
-   - Autocompletion Plugins
-   - LSP Plugins
-   - Visual Plugins
-
-1. Packer Setup
----------------
-- We use `packer.nvim` as the plugin manager.
-- The `use` function is used to load and configure plugins.
-
-2. Plugins List
+1. Plugins List
 ---------------
 
 Core Plugins:
@@ -39,7 +21,6 @@ Visual Plugins:
 
 Summary
 -------
-This configuration uses `packer.nvim` to manage the following plugins:
 - Core functionality with `packer.nvim`.
 - Autocompletion with `nvim-cmp` and its sources.
 - LSP support with `nvim-lspconfig`.
