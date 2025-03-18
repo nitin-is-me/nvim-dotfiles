@@ -1,5 +1,7 @@
 -- This is init.lua if using lazy.nvim
--- File location: C:\Users\Admin\AppData\Local\nvim
+-- File location
+-- Windows: C:\Users\Admin\AppData\Local\nvim
+-- Linux: ~/.config/nvim
 -- Load plugins
 require('config.lazy')
 
