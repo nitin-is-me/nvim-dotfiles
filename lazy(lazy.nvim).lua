@@ -5,7 +5,9 @@
 -- This file is used to manage plugins
 -- This file can be loaded by calling `require('lazy')` from your init.lua
 
--- Install lazy.nvim if you don't have it yet
+-- Clone the lazy.nvim repo to nvim data folder. The location of Nvim data folder is:
+-- Windows: C:\Users\Admin\AppData\Local\nvim-data
+-- Linux: ~/.local/share/nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
