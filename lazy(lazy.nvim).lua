@@ -57,6 +57,7 @@ require('lazy').setup({
     local builtin = require("telescope.builtin")
     -- Keymaps
     vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
+    vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live grep (text)" }) -- Install ripgrep package for this
     vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "List buffers" })
     vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Recent files" })
   end,
