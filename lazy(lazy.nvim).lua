@@ -32,6 +32,38 @@ require('lazy').setup({
   -- Onedark theme
   { 'joshdick/onedark.vim' },
 
+    {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",  -- Automatically run `:TSUpdate` on install
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        -- Essential features
+        highlight = { enable = true },  -- Better syntax highlighting
+        indent = { enable = true },     -- Smart indentation
+        auto_install = true,           -- Auto-install parsers for detected filetypes
+
+        -- Optional but recommended:
+        ensure_installed = {           -- Pre-install parsers (faster startup)
+        "javascript", "typescript", "bash", "json", "html", "css", "markdown"
+        },
+      })
+    end
+  },
+
+ {
+  "nvim-telescope/telescope.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },  -- Required dependency
+  config = function()
+    local builtin = require("telescope.builtin")
+    -- Keymaps
+    vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
+    vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "List buffers" })
+    vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Recent files" })
+  end,
+}
+
+
+
   -- LSP configurations
   { 'neovim/nvim-lspconfig' },
 
