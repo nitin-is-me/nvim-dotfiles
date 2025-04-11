@@ -56,3 +56,4 @@ vim.opt.tabstop = 4         -- Set tabstop to 4 spaces
 vim.opt.shiftwidth = 4      -- Set shiftwidth to 4 spaces
 vim.opt.expandtab = true    -- Convert tabs to spaces
 vim.opt.termguicolors = true -- Enable true color support
+vim.opt.clipboard:append("unnamedplus") -- Use system's clipboard by default for yanking (copying)
